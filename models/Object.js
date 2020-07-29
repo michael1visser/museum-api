@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const objectSchema = new Schema({
     featured: String
-    ,yearAcquired: Number
+    ,yearAcquired: String
     ,isPublicDomain: Boolean
     ,primaryImage: String
     ,primaryImageSmall: String

@@ -14,7 +14,7 @@ function randomizeArt(array){
         array[j] = temp
     }
 
-    for (let k = 0; k < 3; k++){
+    for (let k = 0; k < 1000; k++){
         newArray.push(array[k])
     }
 
@@ -29,12 +29,32 @@ axios.get()
         const mapData = objIds.map(val =>{
             return axios.get(`/${val}`)
                     .then(objData =>{
-                        data.push(objData.data)
+                        let newObj = {}
+                            newObj.featured = objData.data.isHighlight
+                            newObj.yearAcquired = objData.data.accessionYear
+                            newObj.isPublicDomain = objData.data.isPublicDomain
+                            newObj.primaryImage = objData.data.primaryImage
+                            newObj.primaryImageSmall = objData.data.primaryImageSmall
+                            newObj.additionalImages = objData.data.additionalImages
+                            newObj.department = objData.data.department
+                            newObj.objectType = objData.data.objectName
+                            newObj.title = objData.data.title
+                            newObj.culture = objData.data.culture
+                            newObj.period = objData.data.period
+                            newObj.artist = objData.data.artistDisplayName
+                            newObj.dateCreated = objData.data.objectDate
+                            newObj.medium = objData.data.medium
+                            newObj.dimensions = objData.data.dimensions
+                            newObj.country = objData.data.country
+                            newObj.category = objData.data.classification
+                            newObj.rights = objData.data.rightsAndReproduction
+                            newObj.infoLink = objData.data.linkResource
+                        
+                        data.push(newObj)
                     })   
         })
     
         Promise.all(mapData).then(()=>{
-            console.log(data)
             fs.writeFile("db/museumObjects.json", JSON.stringify(data), (err) =>{
                 if (err) throw err
                 console.log("success")
