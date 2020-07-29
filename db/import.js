@@ -49,7 +49,13 @@ axios.get()
                             newObj.category = objData.data.classification
                             newObj.rights = objData.data.rightsAndReproduction
                             newObj.infoLink = objData.data.linkResource
-                        
+                            newObj.bio = objData.data.artistDisplayBio
+                            newObj.nationality = objData.data.artistNationality
+                            newObj.birthDate = objData.data.artistBeginDate
+                            newObj.deathDate = objData.data.artistEndDate
+                            newObj.gender = objData.data.artistGender
+                            newObj.wikiUrl = objData.data.artistWikidata_URL
+                            newObj.UlanUrl = objData.data.artistULAN_URL
                         data.push(newObj)
                     })   
         })
