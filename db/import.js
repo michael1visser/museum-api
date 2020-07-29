@@ -14,7 +14,7 @@ function randomizeArt(array){
         array[j] = temp
     }
 
-    for (let k = 0; k < 1000; k++){
+    for (let k = 0; k < 400; k++){
         newArray.push(array[k])
     }
 
@@ -58,7 +58,9 @@ axios.get()
             fs.writeFile("db/museumObjects.json", JSON.stringify(data), (err) =>{
                 if (err) throw err
                 console.log("success")
+                process.exit()
             })
+
         })  
     })
 
