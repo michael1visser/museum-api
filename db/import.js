@@ -5,6 +5,8 @@ const fs = require('file-system')
 let objIds = []
 let data = []
 
+//Makes use of the Fisher Yates randomization algorithm.
+//JS based on the following: https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb
 function randomizeArt(array){
     let newArray = []
     for(let i = array.length - 1; i > 0; i--){
