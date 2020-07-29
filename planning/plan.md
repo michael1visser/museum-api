@@ -4,7 +4,7 @@
 
 planning - Directory containing markdown file of project plan.
 
-db - Directory containing connection.js, museumObjects.json, and seed.js files
+db - Directory containing connection.js, museumObjects.json, import.js, and seed.js files
 
 models - Directory containing Object.js and Artist.js model files for db object documents.
 
@@ -17,9 +17,10 @@ index.js - main file to run to interact with the api
 ## Development Plan
 
 ### Import Data
-- Create connection, model, and seed files. 
+- Create connection, model, import, and seed files. 
 - Read axios documentation
-- Write and test connection to met api.
+- Write and test connection to met api in import.js.
+- import data into museumObjects.json
 
 ### Seed database
 - Finish seed document and seed DB
