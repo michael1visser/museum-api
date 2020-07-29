@@ -46,4 +46,10 @@ module.exports = {
                 resp.json(object)
             })
     }
+    , updateObject: (req, resp) =>{
+        Object.findByIdAndUpdate(req.params.id, req.body, {new: true})
+            .then(object =>{
+                resp.json(object)
+            })
+    }
 }

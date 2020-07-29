@@ -18,4 +18,6 @@ router.get('/:resource/:name', objectController.showXObjects)
 
 router.post('/objects', objectController.addObject)
 
+router.put('/objects/:id', objectController.updateObject)
+
 module.exports = router

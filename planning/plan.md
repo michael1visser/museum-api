@@ -57,8 +57,7 @@ index.js - main file to run to interact with the api
 -GET /:val - find all items that match specific value. Value will be based on url
 -GET with query strings - Search all items based on query strings.(v2)
 -POST - Add a new item to the database
--PUT /featured - Update item to featured or not featured in the collection.
--PUT /public - Set or remove item from public domain. 
+-PUT - Update and item.
 -Delete - Delete an item from the database. 
 
 ## Model attributes
