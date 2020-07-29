@@ -1,6 +1,6 @@
 const express = require('express')
 const objectController =  require('../controllers/objectController')
-const { showXObjects } = require('../controllers/objectController')
+
 
 const router = express.Router()
 
@@ -12,9 +12,9 @@ router.get('/objects', objectController.index)
 router.get('/objects/public', objectController.isPublic)
 router.get('/objects/featured', objectController.isFeatured)
 
-router.get('/:resource', objectController.showAllX)
+router.get('/objects/:resource', objectController.showAllX)
 
-router.get('/:resource/:name', objectController.showXObjects)
+router.get('/objects/:resource/:name', objectController.showXObjects)
 
 router.post('/objects', objectController.addObject)
 
