@@ -20,4 +20,6 @@ router.post('/objects', objectController.addObject)
 
 router.put('/objects/:id', objectController.updateObject)
 
+router.delete('/objects/:id', objectController.deleteObject)
+
 module.exports = router

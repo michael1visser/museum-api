@@ -52,4 +52,10 @@ module.exports = {
                 resp.json(object)
             })
     }
+    , deleteObject: (req, resp) =>{
+        Object.findByIdAndDelete(req.params.id)
+            .then(object =>{
+                resp.json(object)
+            })
+    }
 }
