@@ -1,9 +1,12 @@
-# Met Museum API
+# :art: Met Museum API :framed_picture:
 
-## Description
+## Introduction
 The Met Museum API is an API built using Node.js  and Express, with data from the Metropolitan Museum of NY open API. Data is stored in a MongoDB database with two collections, Artists and Objects. 
 
 ## How to Use the API
+No installation is required. 
+
+THe API can be accessed at: https://met-museum-api.herokuapp.com/
 
 Requests can be made to the API using the routes described in the API documentation found here:
 [API Documentation](https://met-museum-api.herokuapp.com/docs/)
@@ -15,3 +18,7 @@ https://metmuseum.github.io/#object
 
 Fisher Yates algorithm used to randomize seeded objects. Base code found here: 
 https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb
+
+### Contact me
+[www.michaelpvisser.com](https://www.michaelpvisser.com)
+https://github.com/michael1visser
