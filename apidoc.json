@@ -10,5 +10,6 @@
         "add",
         "update",
         "delete"
-    ]
+    ],
+    "title": "Met Museum API"
 }
