@@ -1,4 +1,6 @@
+
 const bodyParser = require('body-parser')
+const { get } = require('./routes/routesIndex')
 const app = require('express')()
 
 app.use(bodyParser.json())

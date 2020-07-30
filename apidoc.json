@@ -1,0 +1,14 @@
+{
+    "name": "Met Museum Api",
+    "order": [
+        "show",
+        "showPublic",
+        "showFeatured",
+        "showList",
+        "searchByName",
+        "searchByField",
+        "add",
+        "update",
+        "delete"
+    ]
+}

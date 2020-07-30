@@ -9,7 +9,7 @@ module.exports = {
             })
     }
     , showArtists: (req, resp)=>{
-        Artist.find({[req.params.resource]: `${req.params.attribute}`})
+        Artist.find({[req.params.field]: `${req.params.query}`})
             .then(artists =>{
                 resp.json(artists)
             })

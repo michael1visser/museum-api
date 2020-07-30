@@ -12,7 +12,7 @@ module.exports = {
         Object.find({})
             .then(objects =>{
                 let resourceNames = objects.map(val =>{
-                    let objVal = val[req.params.resource]
+                    let objVal = val[req.params.field]
                     return objVal
                 })
                 return resourceNames
@@ -23,7 +23,7 @@ module.exports = {
             })
     }
     , showXObjects: (req, resp)=>{
-        Object.find({[req.params.resource]: `${req.params.name}`})
+        Object.find({[req.params.field]: `${req.params.query}`})
             .then(objects =>{
                 resp.json(objects)
             })
