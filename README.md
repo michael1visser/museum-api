@@ -8,3 +8,10 @@ The Met Museum API is an API built using Node.js  and Express, with data from th
 Requests can be made to the API using the routes described in the API documentation found here:
 [API Documentation](http://link.com)
 
+## Acknowledegements
+
+Data initially seeded using the Metropolitan Art Museum API
+https://metmuseum.github.io/#object
+
+Fisher Yates algorithm used to randomize seeded objects. Base code found here: 
+https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb
