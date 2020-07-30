@@ -6,7 +6,7 @@ The Met Museum API is an API built using Node.js and Express, and MongoDB, with 
 ## How to Use the API
 No installation is required. 
 
-THe API can be accessed at: https://met-museum-api.herokuapp.com/
+The API can be accessed at: https://met-museum-api.herokuapp.com/
 
 Requests can be made to the API using the routes described in the API documentation found here:  
 [API Documentation](https://met-museum-api.herokuapp.com/docs/)
