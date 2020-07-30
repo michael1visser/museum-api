@@ -1,7 +1,7 @@
 # :art: Met Museum API :framed_picture:
 
 ## Introduction
-The Met Museum API is an API built using Node.js  and Express, with data from the Metropolitan Museum of NY open API. Data is stored in a MongoDB database with two collections, Artists and Objects. 
+The Met Museum API is an API built using Node.js and Express, and MongoDB, with data from the Metropolitan Museum of NY open API. The database contains two collections - Artists and Objects - and is hosted on Heroku.
 
 ## How to Use the API
 No installation is required. 
