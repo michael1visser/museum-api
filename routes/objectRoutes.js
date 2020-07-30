@@ -74,7 +74,7 @@ router.get('/objects/:field/:query', objectController.showXObjects)
  *@apiParam {string} resource The resource you would like to search within.
  *@apiParam {string} query The option from the resource list you would like to isolate.
  * @apiSuccess {json} All objects which match the query.
- * @apiSuccessExample  Sample URL: http://domain/objects/department/Photographs
+ * @apiSuccessExample  Sample URL: http://domain/objects/department/photographs
  * Success Response: 
  * {
     "additionalImages": [

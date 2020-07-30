@@ -11,11 +11,11 @@ module.exports = {
     , showAllX: (req, resp) =>{
         Object.find({})
             .then(objects =>{
-                let resourceNames = objects.map(val =>{
+                let fieldList = objects.map(val =>{
                     let objVal = val[req.params.field]
                     return objVal
                 })
-                return resourceNames
+                return fieldList
             })
             .then(array=>{
                 let newArray = [...new Set(array)]
@@ -23,7 +23,7 @@ module.exports = {
             })
     }
     , showXObjects: (req, resp)=>{
-        Object.find({[req.params.field]: `${req.params.query}`})
+        Object.find({[req.params.field]: { '$regex': `^${req.params.query}$`, $options: 'i'}})
             .then(objects =>{
                 resp.json(objects)
             })

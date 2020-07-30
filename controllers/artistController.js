@@ -33,7 +33,7 @@ module.exports = {
             })
     }
     , searchName: (req, resp) =>{
-        Artist.find({name: {$regex: `${req.params.name}`, $options: 'i'}})
+        Artist.find({name: { '$regex': `^${req.params.name}`, $options: 'i'}})
             .then(artist =>{
                 resp.json(artist)
             })
