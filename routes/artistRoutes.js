@@ -16,7 +16,7 @@ router.get('/artists/name/:name', artistController.searchName)
  * @api {get} /artists/name/:name Search artists by name.
  * @apiName searchByName
  * @apiGroup Artists
- *@apiParam {string} name The name or partial name of the artist (case insensitive).
+ * @apiParam {string} name The name or partial name of the artist (case insensitive).
  * @apiSuccess {json} All API returns all matching objects in json format.
  * @apiSuccessExample  Sample URL: http://domain/artists/name/mike
  * Success Response: 
@@ -38,8 +38,8 @@ router.get('/artists/:field/:query', artistController.showArtists)
  * @api {get} /artists/:field/:query Show artists that match a field query.
  * @apiName searchByField
  * @apiGroup Artists
- *@apiParam {string} field The name of the field to be searched
- *@apiParam {string} query The field option to isolate.
+ * @apiParam {string} field The name of the field to be searched
+ * @apiParam {string} query The field option to isolate.
  * @apiSuccess {json} All API returns all matching objects in json format.
  * @apiSuccessExample  Sample URL: http://domain/artists/nationality/American
  * Success Response: 
@@ -103,7 +103,7 @@ router.put('/artists/:id', artistController.updateArtist)
  * @api {put} /artists/:id Update an existing artist.
  * @apiName update
  * @apiGroup Artists
- *@apiParam {string} id The database id of the artist to update.
+ * @apiParam {string} id The database id of the artist to update.
  * @apiSuccess {json} All API returns updated artist object.
  * @apiSuccessExample  Sample URL: http://domain/artist/5f21dbc5f11c0750d1fedd1b
  * Request Body:
@@ -130,7 +130,7 @@ router.delete('/artists/:id', artistController.deleteArtist)
  * @api {delete} /artists/:id Delete an artist.
  * @apiName delete
  * @apiGroup Artists
- *@apiParam {string} id The database ID of the artist to delete
+ * @apiParam {string} id The database ID of the artist to delete
  * @apiSuccess {json} All API returns the deleted artist
  * @apiSuccessExample  Sample URL: http://domain/artists/5f21dbc5f11c0750d1fedd1b
  * Success Response: 

@@ -12,14 +12,14 @@ router.get('/objects', objectController.index)
 /**
  * @api {get} /objects Show all objects
  * @apiName show
- * * @apiGroup Objects
+ * @apiGroup Objects
  */
 
 router.get('/objects/public', objectController.isPublic)
 /**
  * @api {get} /objects/public Show all objects currently in the public domain
  * @apiName showPublic
- * * @apiGroup Objects
+ * @apiGroup Objects
  * *@apiSuccess {json} all Json objects with public set to true
  */
 
@@ -28,8 +28,6 @@ router.get('/objects/featured', objectController.isFeatured)
  * @api {get} /objects/featured Show featured objects
  * @apiName showFeatured
  * @apiGroup Objects
- *
- *
  * @apiSuccess {json} all all objects with featured currently set to true
  */
 
@@ -38,7 +36,7 @@ router.get('/objects/:field', objectController.showAllX)
  * @api {get} /objects/:field Show a list of all possible options for the searched field. 
  * @apiName showList
  * @apiGroup Objects
- *@apiParam {string} field The object field you would like to query.
+ * @apiParam {string} field The object field you would like to query.
  * @apiSuccess {array} Queried_Field Array of possible options.
  * @apiSuccessExample  Sample URL: http://domain/objects/department
  * Success Response: 
@@ -70,8 +68,8 @@ router.get('/objects/:field/:query', objectController.showXObjects)
  * @api {get} /objects/:field/:query Show objects that match a field query.
  * @apiName searchByField
  * @apiGroup Objects
- *@apiParam {string} field The field you would like to search within.
- *@apiParam {string} query The option from the field options list you would like to isolate.
+ * @apiParam {string} field The field you would like to search within.
+ * @apiParam {string} query The option from the field options list you would like to isolate.
  * @apiSuccess {json} All objects which match the query.
  * @apiSuccessExample  Sample URL: http://domain/objects/department/photographs
  * Success Response: 
