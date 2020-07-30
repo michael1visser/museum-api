@@ -6,7 +6,7 @@ The Met Museum API is an API built using Node.js  and Express, with data from th
 ## How to Use the API
 
 Requests can be made to the API using the routes described in the API documentation found here:
-[API Documentation](http://link.com)
+[API Documentation](https://met-museum-api.herokuapp.com/docs/)
 
 ## Acknowledegements
 
