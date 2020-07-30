@@ -12,8 +12,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "json",
             "optional": false,
-            "field": "API",
-            "description": "<p>returns successfully posted information.</p>"
+            "field": "All",
+            "description": "<p>API returns successfully posted information.</p>"
           }
         ]
       },
@@ -55,8 +55,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "json",
             "optional": false,
-            "field": "API",
-            "description": "<p>returns the deleted artist</p>"
+            "field": "All",
+            "description": "<p>API returns the deleted artist</p>"
           }
         ]
       },
@@ -105,8 +105,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "json",
             "optional": false,
-            "field": "API",
-            "description": "<p>returns all matching objects in json format.</p>"
+            "field": "All",
+            "description": "<p>API returns all matching objects in json format.</p>"
           }
         ]
       },
@@ -148,8 +148,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "json",
             "optional": false,
-            "field": "API",
-            "description": "<p>returns all matching objects in json format.</p>"
+            "field": "All",
+            "description": "<p>API returns all matching objects in json format.</p>"
           }
         ]
       },
@@ -201,8 +201,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "json",
             "optional": false,
-            "field": "API",
-            "description": "<p>returns updated artist information.</p>"
+            "field": "All",
+            "description": "<p>API returns updated artist object.</p>"
           }
         ]
       },
@@ -231,8 +231,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "json",
             "optional": false,
-            "field": "API",
-            "description": "<p>will return the new object in json format.</p>"
+            "field": "All",
+            "description": "<p>API will return the new object in json format.</p>"
           }
         ]
       },
@@ -274,8 +274,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "json",
             "optional": false,
-            "field": "API",
-            "description": "<p>returns deleted object in json format.</p>"
+            "field": "All",
+            "description": "<p>API returns deleted object in json format.</p>"
           }
         ]
       },
@@ -304,15 +304,15 @@ define({ "api": [
             "group": "Parameter",
             "type": "string",
             "optional": false,
-            "field": "resource",
-            "description": "<p>The resource you would like to search within.</p>"
+            "field": "field",
+            "description": "<p>The field you would like to search within.</p>"
           },
           {
             "group": "Parameter",
             "type": "string",
             "optional": false,
             "field": "query",
-            "description": "<p>The option from the resource list you would like to isolate.</p>"
+            "description": "<p>The option from the field options list you would like to isolate.</p>"
           }
         ]
       }
@@ -331,7 +331,7 @@ define({ "api": [
       },
       "examples": [
         {
-          "title": "Sample URL: http://domain/objects/department/Photographs",
+          "title": "Sample URL: http://domain/objects/department/photographs",
           "content": "Success Response: \n{\n    \"additionalImages\": [\n      \n    ],\n    \"_id\": \"5f21b4de830211fe7916a0d0\",\n    \"featured\": \"false\",\n    \"yearAcquired\": \"1997\",\n    \"isPublicDomain\": false,\n    \"primaryImage\": \"\",\n    \"primaryImageSmall\": \"\",\n    \"department\": \"Photographs\",\n    \"objectType\": \"Photograph\",\n    \"title\": \"H.W. Reitz, Architect\",\n    \"culture\": \"\",\n    \"period\": \"\",\n    \"artist\": \"Werner Mantz\",\n    \"dateCreated\": \"1927\",\n    \"medium\": \"Gelatin silver print\",\n    \"dimensions\": \"23.5 x 17.5 cm (9 1/4 x 6 7/8 in. )\",\n    \"country\": \"\",\n    \"category\": \"Photographs\",\n    \"rights\": \"© 2020 Artists Rights Society (ARS), New York\",\n    \"infoLink\": \"\",\n    \"__v\": 0\n  },\n  ...",
           "type": "json"
         }
@@ -347,19 +347,6 @@ define({ "api": [
     "title": "Show all objects",
     "name": "show",
     "group": "Objects",
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "json",
-            "optional": false,
-            "field": "all",
-            "description": "<p>Json objects of all objects</p>"
-          }
-        ]
-      }
-    },
     "version": "0.0.0",
     "filename": "routes/objectRoutes.js",
     "groupTitle": "Objects"
@@ -389,7 +376,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/objects/:resource",
+    "url": "/objects/:field",
     "title": "Show a list of all possible options for the searched field.",
     "name": "showList",
     "group": "Objects",
@@ -400,8 +387,8 @@ define({ "api": [
             "group": "Parameter",
             "type": "string",
             "optional": false,
-            "field": "resource",
-            "description": "<p>The resource you would like to query.</p>"
+            "field": "field",
+            "description": "<p>The object field you would like to query.</p>"
           }
         ]
       }
@@ -413,8 +400,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "array",
             "optional": false,
-            "field": "Array",
-            "description": "<p>of possible options.</p>"
+            "field": "Queried_Field",
+            "description": "<p>Array of possible options.</p>"
           }
         ]
       },
@@ -479,8 +466,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "json",
             "optional": false,
-            "field": "API",
-            "description": "<p>returns updated object in json format.</p>"
+            "field": "All",
+            "description": "<p>API returns updated object in json format.</p>"
           }
         ]
       },

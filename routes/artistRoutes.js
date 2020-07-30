@@ -17,7 +17,7 @@ router.get('/artists/name/:name', artistController.searchName)
  * @apiName searchByName
  * @apiGroup Artists
  *@apiParam {string} name The name or partial name of the artist (case insensitive).
- * @apiSuccess {json} API returns all matching objects in json format.
+ * @apiSuccess {json} All API returns all matching objects in json format.
  * @apiSuccessExample  Sample URL: http://domain/artists/name/mike
  * Success Response: 
  * {
@@ -40,7 +40,7 @@ router.get('/artists/:field/:query', artistController.showArtists)
  * @apiGroup Artists
  *@apiParam {string} field The name of the field to be searched
  *@apiParam {string} query The field option to isolate.
- * @apiSuccess {json} API returns all matching objects in json format.
+ * @apiSuccess {json} All API returns all matching objects in json format.
  * @apiSuccessExample  Sample URL: http://domain/artists/nationality/American
  * Success Response: 
  * {
@@ -75,7 +75,7 @@ router.post('/artists', artistController.addArtist)
  * @api {post} /artists Add a new artist.
  * @apiName add
  * @apiGroup Artists
- * @apiSuccess {json} API returns successfully posted information.
+ * @apiSuccess {json} All API returns successfully posted information.
  * @apiSuccessExample  Sample URL: http://domain/artists
  * Request Body:
  * {
@@ -104,7 +104,7 @@ router.put('/artists/:id', artistController.updateArtist)
  * @apiName update
  * @apiGroup Artists
  *@apiParam {string} id The database id of the artist to update.
- * @apiSuccess {json} API returns updated artist information.
+ * @apiSuccess {json} All API returns updated artist object.
  * @apiSuccessExample  Sample URL: http://domain/artist/5f21dbc5f11c0750d1fedd1b
  * Request Body:
  * {
@@ -131,7 +131,7 @@ router.delete('/artists/:id', artistController.deleteArtist)
  * @apiName delete
  * @apiGroup Artists
  *@apiParam {string} id The database ID of the artist to delete
- * @apiSuccess {json} API returns the deleted artist
+ * @apiSuccess {json} All API returns the deleted artist
  * @apiSuccessExample  Sample URL: http://domain/artists/5f21dbc5f11c0750d1fedd1b
  * Success Response: 
  * {

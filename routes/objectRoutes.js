@@ -13,7 +13,6 @@ router.get('/objects', objectController.index)
  * @api {get} /objects Show all objects
  * @apiName show
  * * @apiGroup Objects
- * *@apiSuccess {json} all Json objects of all objects
  */
 
 router.get('/objects/public', objectController.isPublic)
@@ -40,7 +39,7 @@ router.get('/objects/:field', objectController.showAllX)
  * @apiName showList
  * @apiGroup Objects
  *@apiParam {string} field The object field you would like to query.
- * @apiSuccess {array} Array of possible options.
+ * @apiSuccess {array} Queried_Field Array of possible options.
  * @apiSuccessExample  Sample URL: http://domain/objects/department
  * Success Response: 
  * [
@@ -71,8 +70,8 @@ router.get('/objects/:field/:query', objectController.showXObjects)
  * @api {get} /objects/:field/:query Show objects that match a field query.
  * @apiName searchByField
  * @apiGroup Objects
- *@apiParam {string} resource The resource you would like to search within.
- *@apiParam {string} query The option from the resource list you would like to isolate.
+ *@apiParam {string} field The field you would like to search within.
+ *@apiParam {string} query The option from the field options list you would like to isolate.
  * @apiSuccess {json} All objects which match the query.
  * @apiSuccessExample  Sample URL: http://domain/objects/department/photographs
  * Success Response: 
@@ -109,7 +108,7 @@ router.post('/objects', objectController.addObject)
  * @api {post} /objects/ Add a new Art object
  * @apiName add
  * @apiGroup Objects
- * @apiSuccess {json} API will return the new object in json format.
+ * @apiSuccess {json} All API will return the new object in json format.
  * @apiSuccessExample  Sample URL: http://domain/objects
  * Request Body:
  * {
@@ -154,7 +153,7 @@ router.put('/objects/:id', objectController.updateObject)
  * @apiName update
  * @apiGroup Objects
  *@apiParam {string} id The database ID of the object you are updating.
- * @apiSuccess {json} API returns updated object in json format.
+ * @apiSuccess {json} All API returns updated object in json format.
  * @apiSuccessExample  Sample URL: http://domain/objects/5f21c8c3e096e928e1ccfd93
  * Request Body:
  * {
@@ -193,7 +192,7 @@ router.delete('/objects/:id', objectController.deleteObject)
  * @apiName delete
  * @apiGroup Objects
  *@apiParam {string} id The database ID of the object you are updating.
- * @apiSuccess {json} API returns deleted object in json format.
+ * @apiSuccess {json} All API returns deleted object in json format.
  * @apiSuccessExample  Sample URL: http://domain/objects/5f21c8c3e096e928e1ccfd93
 
  * Success Response: 
