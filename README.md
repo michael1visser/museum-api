@@ -8,17 +8,17 @@ No installation is required.
 
 THe API can be accessed at: https://met-museum-api.herokuapp.com/
 
-Requests can be made to the API using the routes described in the API documentation found here:
+Requests can be made to the API using the routes described in the API documentation found here:  
 [API Documentation](https://met-museum-api.herokuapp.com/docs/)
 
 ## Acknowledegements
 
-Data initially seeded using the Metropolitan Art Museum API
+Data initially seeded using the Metropolitan Art Museum API  
 https://metmuseum.github.io/#object
 
 Fisher Yates algorithm used to randomize seeded objects. Base code found here: 
 https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb
 
 ### Contact me
-[www.michaelpvisser.com](https://www.michaelpvisser.com)
+[www.michaelpvisser.com](https://www.michaelpvisser.com)  
 https://github.com/michael1visser
