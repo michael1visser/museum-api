@@ -9,7 +9,7 @@ The Met Museum API is an API built with data from the Metropolitan Museum of NY 
 
 The app is deployed on Heroku.  
 
-The database contains two collections - Artists and Objects - and is deployed on a MongoDB Atlas cluster. Objects and Artists can be searched using specific filters, outline in the [API docs](https://met-museum-api.herokuapp.com/docs/).
+The database contains two collections - Artists and Objects - and is deployed on a MongoDB Atlas cluster. Objects and Artists can be searched using specific routes, outlined in the [API docs](https://met-museum-api.herokuapp.com/docs/).
 
 ## How to Use the API
 No installation is required. 
