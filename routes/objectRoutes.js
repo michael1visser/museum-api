@@ -39,6 +39,14 @@ router.get('/objects/random', objectController.randomObject)
  * @apiSuccess {json} all Returns json of a single object
  */
 
+ router.get('/objects/id/:id', objectController.singleObject)
+ /**
+ * @api {get} /objects/id/:id Find an object by ID.
+ * @apiName showById
+ * @apiGroup Objects
+ * @apiSuccess {json} all Returns json of a single object
+ */
+
 router.get('/objects/:field', objectController.showAllX)
 /**
  * @api {get} /objects/:field Show a list of all possible options for the searched field. 

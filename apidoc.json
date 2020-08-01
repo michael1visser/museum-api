@@ -2,6 +2,7 @@
     "name": "Met Museum Api",
     "order": [
         "show",
+        "showById",
         "showRandom",
         "showPublic",
         "showFeatured",

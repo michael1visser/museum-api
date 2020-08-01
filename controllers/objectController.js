@@ -34,6 +34,12 @@ module.exports = {
                 resp.json(objects)
             })
     }
+    , singleObject: (req, resp) =>{
+        Object.find({_id: req.params.id})
+            .then(object =>{
+                resp.json(object)
+            })
+    }
     , isFeatured: (req, resp) =>{
         Object.find({featured: true})
             .then(objects =>{
