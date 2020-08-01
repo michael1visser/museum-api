@@ -35,7 +35,7 @@ module.exports = {
             })
     }
     , singleObject: (req, resp) =>{
-        Object.find({_id: req.params.id})
+        Object.findOne({_id: req.params.id})
             .then(object =>{
                 resp.json(object)
             })
