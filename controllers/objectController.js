@@ -40,6 +40,14 @@ module.exports = {
                 resp.json(objects)
             })
     }
+    , randomObject: (req, resp) =>{
+        let random = Math.floor(Math.random() * 400)
+
+        Object.findOne().skip(random)
+            .then(object =>{
+                resp.json(object)
+            })
+    }
     , addObject: (req, resp) => {
         Object.create(req.body)
             .then(object =>{

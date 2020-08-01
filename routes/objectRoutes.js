@@ -31,6 +31,14 @@ router.get('/objects/featured', objectController.isFeatured)
  * @apiSuccess {json} all all objects with featured currently set to true
  */
 
+router.get('/objects/random', objectController.randomObject)
+ /**
+ * @api {get} /objects/random Show a random object.
+ * @apiName showRandom
+ * @apiGroup Objects
+ * @apiSuccess {json} all Returns json of a single object
+ */
+
 router.get('/objects/:field', objectController.showAllX)
 /**
  * @api {get} /objects/:field Show a list of all possible options for the searched field. 
